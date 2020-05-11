@@ -22,6 +22,7 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
 }
 
 .nav {
@@ -111,6 +112,21 @@ button {
     grid-template: 50% 50% / 50% 50%;
 }
 
+.services_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.services_img {
+    flex-basis: 120px;
+    text-align: center;
+}
+
+.services_text {
+    flex-basis: calc(100% - 120px);
+}
 .services h3 {
     font-size: 28px;
     font-weight: 400;
