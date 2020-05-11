@@ -127,6 +127,7 @@ button {
 .services_text {
     flex-basis: calc(100% - 120px);
 }
+
 .services h3 {
     font-size: 28px;
     font-weight: 400;
@@ -136,4 +137,10 @@ button {
     font-size: 14px;
     color: #b2b2b2;
     line-height: 1.5;
+}
+
+.clients {
+    display: grid;
+    grid-template: 120 px 120px / repeat(4, 25%);
+    text-align: center;
 }
