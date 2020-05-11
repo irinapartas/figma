@@ -15,6 +15,11 @@ body {
     box-sizing: border-box;
     font-weight: 700;
 }
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f7f7f7;
+}
 
 .wrap {
     width: 100%;
@@ -70,18 +75,21 @@ body {
     font-size: 56px;
     color: #202020;
     font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 0.4px;
 }
 
 .text-main {
     font-size: 32px;
     line-height: 1.5;
-    color: #4f4f4f
+    color: #4f4f4f;
+    margin-bottom: 2px;
 }
 
 button {
     background-color: #5528ff;
     border-radius: 10px;
-    padding: 10px 45px;
+    padding: 16px 50px;
     color: #fff;
     border: none;
     font-size: 24px;
@@ -109,7 +117,8 @@ button {
 
 .services {
     display: grid;
-    grid-template: 50% 50% / 50% 50%;
+    grid-template: repeat(2, 1fr) / 50% 50%;
+    grid-row-gap: 36px;
 }
 
 .services_item {
@@ -120,12 +129,13 @@ button {
 
 
 .services_img {
-    flex-basis: 120px;
+    flex-basis: 165px;
     text-align: center;
 }
 
 .services_text {
-    flex-basis: calc(100% - 120px);
+    flex-basis: calc(50% - 165px);
+    margin-bottom: 17px;
 }
 
 .services h3 {
@@ -143,12 +153,14 @@ button {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(4, 25%);
     text-align: center;
+    padding-top: 0;
 }
 
 .team {
-    display: block;
-    grid-template: repeat(3, 1ft) / repeat(3, 33%);
-    grid-row-gap: 40px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-row-gap: 51px;
+    padding-top: 20px;
 }
 
 .team-item {
@@ -161,6 +173,40 @@ button {
     margin-right: 20px;
 }
 
+.team-item h3 {
+    font-size: 28px;
+    color: #202020;
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+
+.team-item p {
+    font-size: 14px;
+    color: #b2b2b2;
+}
+
 .team-item>div {
-    flex-basis: calc(100% - 120px);
+    flex-basis: calc(100% - 100px);
+}
+
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+}
+
+.social>li {
+    margin-left: 15px;
+}
+
+.social>li>a {
+    text-decoration: none;
+    color: #b2b2b2;
+    font-size: 24px;
 }
