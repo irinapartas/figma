@@ -141,6 +141,26 @@ button {
 
 .clients {
     display: grid;
-    grid-template: 120 px 120px / repeat(4, 25%);
+    grid-template: repeat(2, 1fr) / repeat(4, 25%);
     text-align: center;
+}
+
+.team {
+    display: block;
+    grid-template: repeat(3, 1ft) / repeat(3, 33%);
+    grid-row-gap: 40px;
+}
+
+.team-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.team-item img{
+    margin-right: 20px;
+}
+
+.team-item>div {
+    flex-basis: calc(100% - 120px);
 }
